@@ -25,3 +25,5 @@ dependencies/cocoapi/PythonAPI_Win/pycocotools/_mask.so
 dependencies/cocoapi/PythonAPI_Win/pycocotools/coco.pyc
 dependencies/cocoapi/PythonAPI_Win/pycocotools/cocoeval.pyc
 dependencies/cocoapi/PythonAPI_Win/pycocotools/mask.pyc
+dependencies/cocoapi/PythonAPI_Win/pycocotools/_mask.cpp
+
