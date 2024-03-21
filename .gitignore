@@ -1,1 +1,2 @@
-data/ActionGenome/*
+data/ActionGenome/anno_frames_bicls
+data/ActionGenome/frames_bicls
