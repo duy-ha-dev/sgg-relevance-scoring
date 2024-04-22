@@ -1,0 +1,26 @@
+ninja_required_version = 1.3
+cxx = c++
+
+cflags = -pthread -B /home/maple143/anaconda3/envs/sgg_relevance_scoring/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/maple143/RiceU/COMP459/sgg-relevance-scoring/scene-graph-benchmark/maskrcnn_benchmark/csrc -I/home/maple143/anaconda3/envs/sgg_relevance_scoring/lib/python3.8/site-packages/torch/include -I/home/maple143/anaconda3/envs/sgg_relevance_scoring/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/maple143/anaconda3/envs/sgg_relevance_scoring/lib/python3.8/site-packages/torch/include/TH -I/home/maple143/anaconda3/envs/sgg_relevance_scoring/lib/python3.8/site-packages/torch/include/THC -I/home/maple143/anaconda3/envs/sgg_relevance_scoring/include/python3.8 -c
+post_cflags = -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+cuda_dlink_post_cflags = 
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+
+
+
+
+build /home/maple143/RiceU/COMP459/sgg-relevance-scoring/build/temp.linux-x86_64-cpython-38/home/maple143/RiceU/COMP459/sgg-relevance-scoring/scene-graph-benchmark/maskrcnn_benchmark/csrc/cpu/ROIAlign_cpu.o: compile /home/maple143/RiceU/COMP459/sgg-relevance-scoring/scene-graph-benchmark/maskrcnn_benchmark/csrc/cpu/ROIAlign_cpu.cpp
+build /home/maple143/RiceU/COMP459/sgg-relevance-scoring/build/temp.linux-x86_64-cpython-38/home/maple143/RiceU/COMP459/sgg-relevance-scoring/scene-graph-benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.o: compile /home/maple143/RiceU/COMP459/sgg-relevance-scoring/scene-graph-benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp
+build /home/maple143/RiceU/COMP459/sgg-relevance-scoring/build/temp.linux-x86_64-cpython-38/home/maple143/RiceU/COMP459/sgg-relevance-scoring/scene-graph-benchmark/maskrcnn_benchmark/csrc/vision.o: compile /home/maple143/RiceU/COMP459/sgg-relevance-scoring/scene-graph-benchmark/maskrcnn_benchmark/csrc/vision.cpp
+
+
+
+
+
+

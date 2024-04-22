@@ -1,6 +1,8 @@
 data/ActionGenome/anno_frames_bicls
 data/ActionGenome/frames_bicls
 
+dependencies/*
+
 # CocoAPI
 dependencies/cocoapi/images/
 dependencies/cocoapi/annotations/
@@ -19,11 +21,4 @@ dependencies/cocoapi/PythonAPI/pycocotools/coco.pyc
 dependencies/cocoapi/PythonAPI/pycocotools/cocoeval.pyc
 dependencies/cocoapi/PythonAPI/pycocotools/mask.pyc
 
-dependencies/cocoapi/PythonAPI_Win/pycocotools/__init__.pyc
-dependencies/cocoapi/PythonAPI_Win/pycocotools/_mask.c
-dependencies/cocoapi/PythonAPI_Win/pycocotools/_mask.so
-dependencies/cocoapi/PythonAPI_Win/pycocotools/coco.pyc
-dependencies/cocoapi/PythonAPI_Win/pycocotools/cocoeval.pyc
-dependencies/cocoapi/PythonAPI_Win/pycocotools/mask.pyc
-dependencies/cocoapi/PythonAPI_Win/pycocotools/_mask.cpp
 
