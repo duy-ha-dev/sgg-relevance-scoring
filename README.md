@@ -7,3 +7,4 @@ data/ActionGenome link: https://drive.google.com/drive/folders/1-cX7VX79GB0BrKiH
 Notes to format later:
 - Running latest version of PyTorch on Python 3.8 import error: may need to pip install typing-extensions --upgrade 
 - Compiling pycocoapi on Windows:  Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+- Download Pretrained Causal MOTIFS-SUM models on SGDet from here: https://onedrive.live.com/?authkey=%21AF%5FEM%2DrkbMyT3gs&id=22376FFAD72C4B64%21781947&cid=22376FFAD72C4B64&parId=root&parQt=sharedby&o=OneUp
